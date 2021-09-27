@@ -4,6 +4,13 @@ Record Validator
 
 Requirements: Maven, Java 11
 
+Usage
+-----
+
+- Compile and run the program with default input files: `mvn compile exec:java`
+- Compile and run the program with custom input files: `mvn compile exec:java "-Dexec.args=input/records.csv input/records.json"` (tested on Windows)
+- Run the tests: `mvn test`
+
 Implementation Remarks
 ----------------------
 
@@ -13,10 +20,3 @@ Implementation Remarks
 - For record validation, if multiple records have the same reference, then all of them are reported as invalid.
 - Output is written to an HTML file with the help of Freemarker templating library. The output has the same styling as `instructions.html`. The output is written to `output/failed-records.html`.
 - Logging is done with the help of Logback library. Logs are written both to the console and to `logs/application.log`.
-
-Usage
------
-
-- Compile and run the program with default input files: `mvn compile exec:java`
-- Compile and run the program with custom input files: `mvn compile exec:java "-Dexec.args=input/records.csv input/records.json"` (tested on Windows)
-- Run the tests: `mvn test`
