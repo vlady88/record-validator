@@ -1,6 +1,6 @@
 
-Records Validator
-=================
+Record Validator
+================
 
 Requirements: Maven, Java 11
 
