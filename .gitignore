@@ -1,0 +1,4 @@
+target/
+.idea/
+output/failed-records.html
+logs/application.log
